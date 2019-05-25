@@ -1,0 +1,27 @@
+<!--miniprogram/pages/pages02/page02.wxml-->
+<view wx:if="{{books}}" class='table'>
+  <view class='title'>
+    <text>图书列表</text>
+  </view>
+  <view class='tr'>
+    <text class='th th1'>书名</text>
+    <text class='th th2'>作者</text>
+    <text class='th th3'>价格</text>
+    <text class='th th4'>操作</text>
+  </view>
+  <block wx:for="{{books}}" wx:key="">
+    <view class='tr'>
+      <text class='td td1'>{{item.name}}</text>
+      <text class='td td2'>{{item.author}}</text>
+      <text class='td td3'>{{item.price}}</text>
+      <button class='del' data-id='{{item._id}}' bindtap='onDel' type='primary' size='mini'>删除</button>
+      <button class='update'  data-id='{{item._id}}' bindtap='onUpdate' type='primary' size='mini'>修改</button>
+    </view>
+  </block>
+</view>
+<view wx:else="{{books}}" class='none'>
+      <text >暂时没有图书！</text>
+</view>
+<view class='add'>
+    <button  bindtap='goSet' type='primary'>添加图书</button>
+</view>

@@ -1,0 +1,9 @@
+/* miniprogram/pages/pages/page01.wxss */
+.address-add{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.image-kangkang{
+  width: 100%;
+}

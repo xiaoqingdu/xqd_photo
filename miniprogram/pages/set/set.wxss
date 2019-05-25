@@ -1,0 +1,8 @@
+/* miniprogram/pages/set/set.wxss */
+.input-container{
+  width: 100%;
+  border: 2px;
+}
+.input_data{
+  border: 1px solid #70bcf6;
+}

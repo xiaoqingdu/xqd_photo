@@ -1,0 +1,23 @@
+<!--miniprogram/pages/set/set.wxml-->
+<!--pages/set/set.wxml-->
+<view class='container'>
+      <form bindsubmit='comfirm' >
+        <view class='input-container' style='display:flex'>
+           <label>书名：</label>
+            <input style='display:none' data-value='{{id}}'  name="id" value='{{book._id}}'></input>
+           <input data-value='{{name}}'  name="name" value='{{book.name}}' class='input_data'></input>
+        </view>
+        <view class='input-container' style='display:flex'>
+           <label>作者：</label>
+           <input data-value='{{author}}'  name="author" value='{{book.author}}'class='input_data'></input>
+        </view>
+        <view class='input-container' style='display:flex'>
+           <label>价格：</label>
+           <input data-value='{{price}}'    name ="price" value='{{book.price}}' class='input_data'></input>
+        </view>
+        <view class='comfirm'>
+           <button   form-type='submit' type='primary'>保存</button>
+      </view>
+    </form>
+</view>
+

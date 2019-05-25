@@ -1,0 +1,8 @@
+<!--miniprogram/pages/register/register.wxml-->
+<view>
+  <form bindsubmit='registerForm'>
+    <input name='user' bindinput='username' value='{{user}}' placeholder='请输入用户名'></input>
+    <input name='pwd' bindinput='password' type='password' value='{{pwd}}' placeholder='请输入密码'></input>
+    <button size="{{primarySize}}"  form-type='submit' disabled='{{disabled}}' bindtap='regist'>注册</button>
+  </form>
+</view>
